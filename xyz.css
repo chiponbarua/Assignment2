@@ -1,0 +1,107 @@
+
+
+
+
+.container {
+    background-color: rgb(134, 140, 141);
+    position: relative;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid rgb(198, 198, 226);
+    background-color: rgb(228, 240, 255);
+    border-radius: 30px;
+}
+.container1{
+    
+    position: relative;
+    margin: 50px;
+    padding: 50px;
+    
+   
+}
+.card {
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+}
+/*********************************
+Media Queries for Mobile Phones:
+**********************************/
+
+@media only screen and (max-width: 688px) {
+
+    .container{
+        
+        /* flex-direction:column-reverse; */
+        grid-template-columns: 1fr;
+    }
+    .btn {/* flex-direction:column-reverse; */
+        grid-template-columns: 1fr;
+
+    }
+
+    .card {
+        grid-template-columns: 280px;
+    }
+
+    
+
+}
+
+.countryE{
+    background: none repeat scroll 0 0 #db8374;
+  border-color: #FFFFFF #081c1d #0d2130 #310f0f;
+  border-radius: 10px 10px 10px 10px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 1px 1px 3px #333333;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 5px;
+  text-align: center;
+  text-shadow: 1px 1px 1px #000000;
+}
+body {
+    background: url('https://source.unsplash.com/twukN12EN7c/1920x1080') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+  }
+
+/*****************************
+Media Queries for TABs:
+******************************/
+
+@media only screen and (max-width: 992px) and (min-width:689px)  {
+    
+    .container{
+        grid-template-columns: 280px 280px;
+    }
+
+    .container1{
+        grid-template-columns: 280px 280px;
+
+    }
+
+
+}
+/*****************************
+Media Queries for MOBILEs:
+******************************/
+@media only screen and (max-width: 688px){
+    
+    .container{
+        grid-template-columns: 280px;
+    }
+
+    .container1{
+        grid-template-columns: 280px;
+
+    }
+
+
+}
+
+
